@@ -1,0 +1,11 @@
+<h2>Add Item</h2>
+<form method="post">
+  {% csrf_token %}
+  <label>Name:</label><br>
+  <input type="text" name="name"><br><br>
+
+  <label>Description:</label><br>
+  <textarea name="description"></textarea><br><br>
+
+  <button type="submit">Add</button>
+</form>
